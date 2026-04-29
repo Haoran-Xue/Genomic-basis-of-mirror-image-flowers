@@ -5,7 +5,7 @@ library(ggplot2)
 library(cowplot)
 
 
-setwd("//141.89.108.211/genetics-shared/hxue/Wachendorfia paniculata genome assembly bak")
+setwd("//141.89.108.211/genetics-shared/hxue/Wachendorfia paniculata genome assembly")
 
 Wachendorfia.10kb.norm <- data.frame(read.table(file = "Wachendorfia.10kb.norm", header = TRUE, row.names = NULL))
 Wachendorfia.100kb.norm <- data.frame(read.table(file = "Wachendorfia.100kb.norm", header = TRUE, row.names = NULL))
