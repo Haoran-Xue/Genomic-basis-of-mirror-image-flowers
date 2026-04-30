@@ -122,7 +122,7 @@ nice -n 10 nohup braker.pl --genome=/path/Ba_Ngeli_ONT/Ba_Ngeli_ONT.bp.hap2.p_ct
 ------------------------------------
 
 ## genome assembly
-nohup /path/programs/hifiasm-0.25.0/hifiasm -o BaK -t 40 BaK.fastq.gz > BaK.out &
+nohup /path/programs/hifiasm-0.25.0/hifiasm -o BaK -t 40 --hg-size 700m BaK.fastq.gz > BaK.out &
 awk '/^S/{print ">"$2"\n"$3}' BaK.bp.p_ctg.gfa | fold > BaK.bp.p_ctg.fa
 awk '/^S/{print ">"$2"\n"$3}' BaK.bp.hap1.p_ctg.gfa | fold > BaK.bp.hap1.p_ctg.fa
 awk '/^S/{print ">"$2"\n"$3}' BaK.bp.hap2.p_ctg.gfa | fold > BaK.bp.hap2.p_ctg.fa
@@ -157,7 +157,7 @@ nice -n 10 nohup braker.pl --genome=/path/BaK.hifi.bp.hap2.p_ctg.fa.masked --pro
 ----------------------------
 
 ## genome assembly
-nice -n 10 nohup /path/programs/hifiasm/hifiasm -o Di -t 20 --hg-size 350m Dix_1_0.hifi.fastq.gz > Di.out &
+nice -n 10 nohup /path/programs/hifiasm/hifiasm -o Di -t 40 --hg-size 350m Dix_1_0.hifi.fastq.gz > Di.out &
 awk '/^S/{print ">"$2"\n"$3}' Di.bp.p_ctg.gfa | fold > Di.bp.p_ctg.fa
 awk '/^S/{print ">"$2"\n"$3}' Di.bp.hap1.p_ctg.gfa | fold > Di.bp.hap1.p_ctg.fa
 awk '/^S/{print ">"$2"\n"$3}' Di.bp.hap2.p_ctg.gfa | fold > Di.bp.hap2.p_ctg.fa
