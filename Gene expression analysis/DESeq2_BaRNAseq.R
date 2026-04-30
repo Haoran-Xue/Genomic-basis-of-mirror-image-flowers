@@ -8,13 +8,6 @@ if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install("DESeq2")
 
-### EnhacedVolcano (https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html) and (https://bioconductor.org/packages/devel/bioc/vignettes/EnhancedVolcano/inst/doc/EnhancedVolcano.html)
-#devtools::install_github('kevinblighe/EnhancedVolcano')
-#OR
-#if (!requireNamespace('BiocManager', quietly = TRUE))
-#  install.packages('BiocManager')
-#BiocManager::install('EnhancedVolcano', force = TRUE)
-
 ### Pheatmap (https://cran.r-project.org/web/packages/pheatmap/index.html)
 #install.packages("pheatmap")
 
@@ -32,7 +25,6 @@ library(ggplot2)
 library(DESeq2)
 library(tidyverse)
 library(RColorBrewer)
-library(EnhancedVolcano)
 library(pheatmap) 
 library(factoextra)
 library(viridis)
