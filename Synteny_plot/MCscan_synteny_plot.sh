@@ -20,7 +20,6 @@ awk '$3 == "transcript" {
     print $1"\t"$4"\t"$5"\t"$9"\t0\t"$7
 }' Di.RM.braker3.gtf > Di.bed
 
-
 awk ' $1 == "ptg000001l" ' Wp.bed > WpR.bed
 awk ' $1 == "ptg000033l" ' Wp.bed > WpP.bed
 awk ' $1 == "ptg000020l" ' Wt.bed > WtR.bed
