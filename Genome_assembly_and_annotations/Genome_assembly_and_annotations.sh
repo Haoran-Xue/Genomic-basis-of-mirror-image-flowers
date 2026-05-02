@@ -32,9 +32,9 @@ nice -n 10 /path/programs/RepeatMasker/RepeatMasker -pa 4 -no_is -dir ./Wp.hardM
 ## Run RepeatMasker for Haplotypes 1 and 2 as well
 
 ## BRAKER3 gene annotation
-nohup braker.pl --genome=/path/Wp.bp.p_ctg.fa --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.merged.bam --workingdir=Wp.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.RM.braker3WmWp.run2.log &
-nohup braker.pl --genome=/path/Wp.bp.hap1.p_ctg.fa --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.hap1.merged.bam --workingdir=Wp.hap1.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.hap1.RM.braker3WmWp.run2.log &
-nohup braker.pl --genome=/path/Wp.bp.hap2.p_ctg.fa --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.hap2.merged.bam --workingdir=Wp.hap2.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.hap2.RM.braker3WmWp.run2.log &
+nohup braker.pl --genome=/path/Wp.bp.p_ctg.fa.masked --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.merged.bam --workingdir=Wp.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.RM.braker3WmWp.run2.log &
+nohup braker.pl --genome=/path/Wp.bp.hap1.p_ctg.fa.masked --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.hap1.merged.bam --workingdir=Wp.hap1.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.hap1.RM.braker3WmWp.run2.log &
+nohup braker.pl --genome=/path/Wp.bp.hap2.p_ctg.fa.masked --prot_seq=Viridiplantae.odb11.for_braker.fa --bam=/path/HISAT2.Wp.hap2.merged.bam --workingdir=Wp.hap2.RM.braker3WmWp --threads 40 --verbosity=4 > Wp.hap2.RM.braker3WmWp.run2.log &
 
 
 ----------------------------------
